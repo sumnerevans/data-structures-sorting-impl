@@ -238,7 +238,7 @@
 \begin{frame}{Sorting}
     Most languages provide built-in sort functions. In general, you will need to
     read your programming language's documentation to find out what complexity
-    guarantees of the sorting algorithm they are using.
+    guarantees the sorting functions provide.
 
     \begin{itemize}
         \item C++:
@@ -254,7 +254,21 @@
             \href{https://doc.rust-lang.org/std/vec/struct.Vec.html\#method.sort}{\texttt{Vec::sort}}
             and
             \href{https://doc.rust-lang.org/std/primitive.slice.html\#method.sort_unstable}{\texttt{slice::sort\_unstable}}.
+
+        \item Go:
+            \href{https://pkg.go.dev/sort\#Sort}{\texttt{sort.Sort}} and
+            \href{https://pkg.go.dev/sort\#Stable}{\texttt{sort.Stable}}. Or with
+            generics:
+            \href{https://pkg.go.dev/slices\#Sort}{\texttt{slices.Sort}} and
+            \href{https://pkg.go.dev/slices\#SortStableFunc}{\texttt{slices.SortStableFunc}}.
     \end{itemize}
+
+    \pause
+
+    \begin{block}{Note}
+        Sorting algorithms are like crypto algorithms: you generally should not
+        implement them yourself.
+    \end{block}
 \end{frame}
 
 \end{document}
