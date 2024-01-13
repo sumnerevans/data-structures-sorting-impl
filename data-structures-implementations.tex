@@ -138,6 +138,19 @@
     \end{block}
 \end{frame}
 
+\begin{frame}{Queues, Stacks, and Deques}
+    In languages that have queues and stacks in their standard libraries, they
+    are usually implemented as wrappers around a list data structure.
+    \pause
+
+    Stacks can be implemented with a list since appending and removing from the
+    end of a list is $\mathcal{O}(1)$.
+    \pause
+
+    Queues are generally implemented with a deque since removal from the front
+    and insertion at the back of a queue are both $\mathcal{O}(1)$ operations.
+\end{frame}
+
 \begin{frame}{What about \{MY\_FAVOURITE\_LANGUAGE\}?}
     \begin{itemize}
         \item Python has \texttt{list} (dynamically sized array) and
@@ -221,19 +234,6 @@
         \item \texttt{HashSet}, \texttt{TreeSet}, and \texttt{LinkedHashSet} in
             Java.
     \end{itemize}
-\end{frame}
-
-\begin{frame}{Queues, Stacks, and Deques}
-    In languages that have queues and stacks in their standard libraries, they
-    are usually implemented as wrappers around a list data structure.
-    \pause
-
-    Stacks can be implemented with a list since appending and removing from the
-    end of a list is $\mathcal{O}(1)$.
-    \pause
-
-    Queues are generally implemented with a deque since removal from the front
-    and insertion at the back of a queue are both $\mathcal{O}(1)$ operations.
 \end{frame}
 
 \begin{frame}{Sorting}
